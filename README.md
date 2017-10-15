@@ -1,2 +1,2 @@
-# haskell-mond
-Mond in Haskell
+# Haskell Mond
+
