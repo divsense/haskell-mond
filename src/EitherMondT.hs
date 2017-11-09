@@ -11,7 +11,7 @@ instance Monad m => Functor (MondT m) where
                                       return ((f a), model')
 
 instance Monad m => Applicative (MondT m) where
-    pure :: a -> MondT m a
+    {-pure :: a -> MondT m a-}
     pure a = MondT $ \model -> pure (a, model)
 
     (<*>) :: MondT m (a -> b) -> MondT m a -> MondT m b
